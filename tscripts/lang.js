@@ -301,6 +301,14 @@ var lang = {
                 return lang.seasonal() + " Progress";
         }
     },
+    "nonSeasonalProgress": function () {
+        switch (this.selectedLang()) {
+            case "en-US":
+            case "default":
+            default:
+                return lang.nonSeasonal() + " Progress";
+        }
+    },
     "nonSeasonal": function () {
         switch (this.selectedLang()) {
             case "en-US":
